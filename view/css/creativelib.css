@@ -1,0 +1,267 @@
+/*reset bootstrap*/
+body {
+	background-color: #f6f8f8;
+}
+.nav > li > a:hover, 
+.nav > li > a:focus {
+	text-decoration: none;
+	background-color: #fff;
+}
+.navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+.navbar-brand:hover, 
+.navbar-brand:focus {
+	color: #fff;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+
+@media (max-width: 768px) { 
+	.container > .navbar-collapse {
+		background-color: #fff;		
+	}
+	.container > .navbar-collapse li a {
+		color: #7d7d7d; 
+	}
+	.container > .navbar-collapse li a:hover,
+	.container > .navbar-collapse li a:focus {
+		color: #446DB2;
+	}
+	.container {
+		padding-right: 0px;
+		padding-left: 0px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+}
+
+/*creative lib style*/
+.cl-navbar {
+	background-color: #446CB3;
+	font-size: 18px;
+}
+.cl-nav-group {
+	border-left: 1px solid rgba(255, 255, 255, 0.11);
+	box-shadow: -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+.cl-nav-item {
+	color: white;
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.11);
+	padding: 13px 27px 15px;
+}
+.cl-logo-wrap {
+	height: 171px;
+	padding-top: 51px;
+}
+.cl-logo-wrap .container {
+	height: 100%;
+	line-height: 120px;
+}
+.cl-logo-wrap a {
+	font-size: 36px;
+}
+@media (max-width: 768px) {
+	.cl-logo-wrap .container {
+		text-align: center;
+	}
+}
+.cl-container {
+	border-top: 1px solid #F1F1F1;
+	border-right: 1px solid #E7E6E6;
+	border-left: 1px solid #E7E6E6;
+	background: white;
+	padding-bottom: 30px;
+	border-radius: 6px;
+	border-bottom: 1px solid #CFCFCF;
+	min-height: 800px;
+	/*max-width: 1108px;*/
+	margin: 0 auto;
+
+	overflow: hidden;
+}
+
+.cl-articles-container {
+	/*width: 61%;*/
+    float: left;
+	padding-top: 40px;
+}
+.cl-sidebar-container {
+	/*width: 39%;*/
+	float: left;
+	padding-top: 40px;
+}
+
+
+
+/********************************************************************************************* 
+
+ Blog Articles      
+
+*********************************************************************************************/
+
+.cl-article {
+	margin:0 5.5% 40px;
+	width: 89%;
+	padding-bottom: 52px;
+	border-bottom:1px dotted #CCC;
+}
+@media (max-width: 768px) {
+	.cl-article {
+		margin:0 0 40px;
+		width: 100%;
+	}
+}
+
+.cl-article-image {
+	padding:35px 0;
+}
+
+/*** sticky meta ***/
+.sticky-author-comments-date {
+	float:left;
+	margin:50px 0 0 0;
+}
+
+.sticky-author-comments-date a {
+	text-decoration:none;
+	color:#446DB2;
+}
+
+.sticky-author-comments-date a:hover {
+	color:#4c4c4c;
+}
+
+/*** index meta ***/
+.cl-article-info {
+	font-size:16px;
+	color:#999999;
+}
+
+.cl-article-image img {
+	border-radius:5px;
+	max-width:100%;
+}
+
+.cl-author-name {
+	color:#999999;
+}
+
+h2.cl-article-title {
+	margin-bottom:15px;
+	margin-top: 0;
+}
+
+h2.cl-article-title a {
+	font-family: 'Varela Round', 'Gotham Rounded', 'Rounded', 'Helvetica', Arial, sans-serif;
+	font-size:36px;
+	text-decoration:none;
+	font-weight:normal;
+	color:#000000;
+	line-height: 1.3em;
+}
+
+h2.cl-article-title a:hover {
+	color:#446DB2;
+}
+
+.cl-article p {
+	font-size:14px;
+	width:95%;
+	margin:0 0 28px 0;
+	line-height: 25px;
+}
+
+/*** sticky read more ***/
+.read-more-sticky {
+	margin:50px 0 0 5px;
+}
+
+.read-more-sticky a {
+	font-size:14px;
+	text-decoration:none;
+	color:#446DB2;
+}
+
+.read-more-sticky a:hover {
+	color:#4C4C4C;
+}
+
+
+/*** index read more ***/
+.read-more {
+
+}
+
+.cl-read-more a {
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+	padding: 9px 12px;
+	border-radius: 5px;
+	background: #446DB2;
+}
+
+.cl-read-more a:hover {
+	color:#ffffff;
+	background: #5BC4BE;
+}
+
+
+/********************************************************************************************* 
+
+Sidebar
+
+*********************************************************************************************/
+.cl-sidebar-container .cl-sidebar-h3 {
+	color: #999999;
+	padding-top: 0px;
+	font-size: 16px;
+	font-weight: normal;
+	margin-top: 0;
+}
+.cl-sidebar-container h3 {
+	padding-top: 30px;
+	font-size: 16px;
+	font-weight: normal;
+}
+.cl-sidebar-container >article {
+	overflow: hidden;
+}
+
+.cl-sidebar-divider {
+	border-bottom: 1px dotted #CCCCCC;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+ul.cl-popular-posts {
+	margin-top:10px;
+}
+
+ul.cl-popular-posts li {
+	float: left;
+	padding: 10px 8px 7px 0;
+}
+
+ul.cl-popular-posts li:hover {
+	background-color: #fff;
+}
+
+ul.cl-popular-posts li:hover a {
+	color: rgb(68, 109, 178);
+	text-decoration: none;
+}
+
+ul.cl-popular-posts h3 { 
+	margin:0;
+	padding:0!important;
+}
