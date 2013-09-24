@@ -1,6 +1,6 @@
 /*!
- * nodeclub - route.js
- * Copyright(c) 2012 fengmk2 <fengmk2@gmail.com>
+ * CreativeClub - route.js
+ * Copyright(c) 2012 
  * MIT Licensed
  */
 

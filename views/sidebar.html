@@ -1,0 +1,89 @@
+<div class="cl-sidebar-container col-md-4">
+    <article class='panel'>
+        <% if (locals.user || locals.current_user) { %>
+          <div class='header'>
+            <span class='col_fade'>个人信息<span>
+          </div>
+         
+          <% } else { %>
+          <div class='inner'>
+            <p><%= config.description %></p>
+            <div>
+              <a href='/signup'><button class='btn'>现在注册</button></a>
+              <span>已注册用户请<a class='light' href='/signin'> 登录</a></span>
+            </div>
+          </div>
+        <% } %>
+    </article>
+    <article class="popular">
+        <h3 class="cl-sidebar-h3">Popular Posts (Month)</h3>
+        <ul class="cl-popular-posts">
+            <li>
+                <h3><a href="#">Flat UI Pro 1.2 Released</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">Collective .PSD: Tips for Working in Photoshop for Teams</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">How to Create Flat Styled Combo Box with Square UI (Part 1)</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">The Ultimate UX Design of a Google Glass App</a></h3>
+            </li>
+            <li>
+                <h3><a href="#/">How to Make a Flat Styled jQuery UI Combo Box Widget (Part 2)</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">Creative Examples of iPhone 6 Concepts</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">Sleek Charts and Graphs Mobile Apps featuring Statistics</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">Interview with Designer: Anton Repponen</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">Peculiar Balance Asymmetrical Website Designs</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">Dynamic and Vivid Sport-related Website Designs</a></h3>
+            </li>
+        </ul>
+    </article>
+    <div class="cl-sidebar-divider"></div>
+    <article class="recent">
+        <h3 class="cl-sidebar-h3">Recent Posts</h3>
+        <ul class="cl-popular-posts">
+            <li>
+                <h3><a href="#">How to Make a Flat Styled jQuery UI Combo Box Widget (Part 2)</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">How to Create Flat Styled Combo Box with Square UI (Part 1)</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">How to Make Custom Flat Styled Google Maps with jQuery and Flat UI</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">Create a Website Flat Design in Photoshop using Flat UI (Video Tutorial)</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">How to Create Color Transition with Blend Tool in Adobe Illustrator</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">Create a Drop Down Menu with Search Box in CSS3 and HTML</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">How to Combine Several Gradients in Adobe Illustrator</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">How to Control Gradient Fills in Adobe Illustrator</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">How to Obtain the Right Color in Adobe Illustrator</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">Create an E-Commerce Web Element with CSS3</a></h3>
+            </li>
+        </ul>
+    </article>
+</div>

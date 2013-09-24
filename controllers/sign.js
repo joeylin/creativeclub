@@ -75,7 +75,7 @@ exports.signup = function (req, res, next) {
       // 发送激活邮件
       mail.sendActiveMail(email, md5(email + config.session_secret), name, email);
       res.render('sign/signup', {
-        success: '欢迎加入 ' + config.name + '！我们已给您的注册邮箱发送了一封邮件，请点击里面的链接来激活您的帐号。'
+        success: '欢迎加入 ' + config.name + '！我们已给您的注册邮箱发送了一封邮件，请点击里面的链接来激活您的帐号。ignore it when you are in test'
       });
     });
   });

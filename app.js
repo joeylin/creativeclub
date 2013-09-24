@@ -1,5 +1,5 @@
 /*!
- * nodeclub - app.js
+ * Creative Club - app.js
  */
 
 /**

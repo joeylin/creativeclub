@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="shortcut icon" href="../../assets/ico/favicon.png"> -->
+
+    <title>CreativeLib</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/public/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/public/css/creativelib.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="navbar cl-navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header  cl-nav-group">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand cl-nav-item" href="#">CreativeLib</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#articles" class="cl-nav-item">Articles</a></li>
+            <li><a href="#projects" class="cl-nav-item">Projects</a></li>
+            <li><a href="#search" class="cl-nav-item">Search</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right cl-nav-group">
+            <li><a href="../navbar/" class="cl-nav-item">Contact</a></li>
+            
+            <% if (locals.current_user) { %>
+              <li><a href="#userID" class="cl-nav-item"><%- locals.current_user.name %></a></li>
+              <li><a href="/signout" class="cl-nav-item">Sign Out</a></li>
+              <% } else { %>
+              <li><a href="/signin" class="cl-nav-item">Sign In</a></li>
+              <li><a href="/signup" class="cl-nav-item">Sign Up</a></li>
+            <% } %>
+
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </header>
+    <div class="cl-logo-wrap">
+      <div class="container">
+        <a class="cl-logo" href="#">Creative Library</a>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="cl-container">
+            <div style="clear:both;"></div>
+            <%- body %>
+        </div>
+    </div>
+
+    <footer id="footer-wrapper">
+        <div class="">
+            <ul class="">
+                <li ><a href="#">Privacy</a></li>
+                <li ><a href="#">Terms</a></li>
+                <li ><a href="#">Advertise</a></li>
+                <li ><a href="#">Affiliates</a></li>
+                <li ><a href="#">Newsletter</a></li>
+                <li ><a href="#">About</a></li>
+                <li ><a href="#">Journal</a></li>
+                <li ><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <ul id="footer-container-right">
+            <li class="copyright">Copyright © 2013  <a href="#" class="on" title="Creative Library">Creative Library</a>. All Rights Reserved.</li>
+            <li class="copyright">
+                <!-- copyright -->
+            </li>
+        </ul>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/public/js/jquery-1.8.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/public/js/bootstrap.js"></script>
+  </body>
+</html>
